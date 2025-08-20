@@ -3,27 +3,27 @@ public class conta {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // 1. Instanciar dois objetos
+
+
         ContaBancaria conta1 = new ContaBancaria();
         ContaBancaria conta2 = new ContaBancaria();
         
-        // Configurar conta1
         System.out.println("=== CONTA 1 ===");
         System.out.print("Digite o número da conta 1: ");
         conta1.numeroConta = scanner.nextLine();
         System.out.print("Digite o titular da conta 1: ");
         conta1.titular = scanner.nextLine();
         conta1.saldo = 0;
-        
-        // Configurar conta2
+    
         System.out.println("\n=== CONTA 2 ===");
         System.out.print("Digite o número da conta 2: ");
         conta2.numeroConta = scanner.nextLine();
         System.out.print("Digite o titular da conta 2: ");
         conta2.titular = scanner.nextLine();
         conta2.saldo = 0;
+    
+
         
-        // Operações na conta1
         System.out.println("\n=== OPERAÇÕES CONTA 1 ===");
         System.out.print("Valor para depósito na conta 1: ");
         double deposito1 = scanner.nextDouble();
@@ -35,7 +35,6 @@ public class conta {
         
         conta1.consultarSaldo();
         
-        // Operações na conta2
         System.out.println("\n=== OPERAÇÕES CONTA 2 ===");
         System.out.print("Valor para depósito na conta 2: ");
         double deposito2 = scanner.nextDouble();
@@ -45,9 +44,10 @@ public class conta {
         double saque2 = scanner.nextDouble();
         conta2.sacar(saque2);
         
+
+
+
         conta2.consultarSaldo();
-        
-        // Mostrar dados finais
         System.out.println("\n=== SITUAÇÃO FINAL ===");
         conta1.mostrarDados();
         conta2.mostrarDados();
